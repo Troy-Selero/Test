@@ -1,4 +1,4 @@
-USE [Selero]
+USE [Selena]
 GO
 
 -- If exists, drop Stored Procedures and Triggers
@@ -177,16 +177,16 @@ ALTER QUEUE NonQualifiedPrescription_SenderQueue WITH ACTIVATION( PROCEDURE_NAME
 GO
 
 /*
-SELECT is_broker_enabled FROM sys.databases WHERE name='Selero'
-SELECT user_access_desc FROM sys.databases WHERE name='Selero'
+SELECT is_broker_enabled FROM sys.databases WHERE name='Selena'
+SELECT user_access_desc FROM sys.databases WHERE name='Selena'
 
 USE [MASTER]
 GO
 
-ALTER DATABASE Selero SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+ALTER DATABASE Selena SET SINGLE_USER WITH ROLLBACK IMMEDIATE
 GO
-ALTER DATABASE Selero SET ENABLE_BROKER
+ALTER DATABASE Selena SET ENABLE_BROKER
 GO
-ALTER DATABASE Selero SET MULTI_USER
+ALTER DATABASE Selena SET MULTI_USER
 GO
 */

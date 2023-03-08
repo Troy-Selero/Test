@@ -1,4 +1,4 @@
-use [Selero]
+use [Selena]
 
 select * from Prescriber
 --where FirstName='troy'
@@ -15,5 +15,5 @@ exec @return_value=dbo.csp_Prescriber_Add @pPrescriberUID=@pPrescriberUID OUTPUT
 select @pPrescriberUID as '@pPrescriberUID'
 select 'Return Value'=@return_value
 
--- truncate table Prescriber
+truncate table Prescriber
 */

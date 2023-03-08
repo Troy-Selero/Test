@@ -1,14 +1,14 @@
-use [Selero]
+use [Selena]
 
 /*
 -- Check if service broker is enabled
-select is_broker_enabled from sys.databases where name='Selero'
+select is_broker_enabled from sys.databases where name='Selena'
 
 -- Enable service broker
-alter database Selero set enable_broker with rollback immediate
+alter database Selena set enable_broker with rollback immediate
 
 -- Disable service broker
-alter database Selero set disable_broker
+alter database Selena set disable_broker
 */
 
 -- CLOSED handles drop off after security_timestamp is passed

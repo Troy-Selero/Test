@@ -1,4 +1,4 @@
-use [Selero]
+use [Selena]
 
 select *
 from Entity with (nolock)

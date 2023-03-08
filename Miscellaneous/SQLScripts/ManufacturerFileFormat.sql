@@ -1,6 +1,6 @@
-use [Selero]
+use [Selena]
 
-select * from ManufacturerFileFormat
+select * from ManufacturerFileFormat where ManufacturerFileFormatUID=1
 select * from ManufacturerFileFormatColumn where ManufacturerFileFormatUID=1
 
 -- truncate table ManufacturerFileFormat
