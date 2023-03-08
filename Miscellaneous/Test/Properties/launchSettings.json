@@ -1,0 +1,15 @@
+{
+  "profiles": {
+	"Miscellaneous": {
+      "commandName": "Project"
+    },
+    "FileManager": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Data\\Development\\Test\\Miscellaneous\\Settings\\filemanager.xml compressfiles"
+    },
+    "ServiceBroker": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Data\\Development\\Test\\Miscellaneous\\Settings\\servicebroker.xml prescriber"
+    }
+  }
+}

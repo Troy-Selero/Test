@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EPPlus" Version="6.1.3" />
+		<PackageReference Include="SSH.NET" Version="2020.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Test.Data\Test.Data.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Selero.Core">
+	    <HintPath>..\Assemblies\Selero.Core.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Selero.Selena">
+	    <HintPath>..\Assemblies\Selero.Selena.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>

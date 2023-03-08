@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<common>
+		<assembly name="Test"/>
+		<variables>
+			<variable name="archivedir" value="C:\Data\Temp\Pictures"/>
+		</variables>
+	</common>
+	<apps>
+		<compressfiles>
+			<assembly name="Test"/>
+			<object name="Apps.FileManager" entrypoint="CompressDirectory"/>
+			<variables></variables>
+			<processes>
+				<process>
+					<directories>
+						<directory sourcedirectoryname="[archivedir]" compresslevel="1" archivefilename="[archivedir]\[base].zip" minimumageinterval="MONTHS" minimumage="2" verify="Y" deletesource="N"/>
+					</directories>
+				</process>
+			</processes>
+		</compressfiles>
+	</apps>
+</settings>

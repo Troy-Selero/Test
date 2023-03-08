@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<common>
+		<assembly name="Test"/>
+		<variables>
+			<variable name="enddialogtype" value="http://schemas.microsoft.com/SQL/ServiceBroker/EndDialog"/>
+			<variable name="errortype" value="http://schemas.microsoft.com/SQL/ServiceBroker/Error"/>
+		</variables>
+		<database server="localhost" name="Selena" username="" password="" commandtimeout="[commandtimeout]"/>
+	</common>
+	<apps>
+		<prescriber>
+			<assembly name="Test"/>
+			<object name="Apps.ServiceBroker" entrypoint="Process"/>
+			<variables>
+				<variable name="waitforcommand" value="exec qsp_NonQualifiedPrescription_Receive"/>
+				<variable name="endconvcommand" value="exec qsp_NonQualifiedPrescription_End '{0}'"/>
+			</variables>
+			<process waitforcommand="[waitforcommand]" endconvcommand="[endconvcommand]" enddialogtype="[enddialogtype]" errortype="[errortype]" />
+		</prescriber>
+	</apps>
+</settings>
